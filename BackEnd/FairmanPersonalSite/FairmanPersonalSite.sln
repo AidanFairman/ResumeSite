@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FairmanPersonalSite", "FairmanPersonalSite\FairmanPersonalSite.csproj", "{3FEA36AA-F93B-4778-A503-B9AD56828D9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FairmanPersonalSite", "FairmanPersonalSite\FairmanPersonalSite.csproj", "{A8C816FC-5A04-46BA-B7D4-A8EDCBF3286F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3FEA36AA-F93B-4778-A503-B9AD56828D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3FEA36AA-F93B-4778-A503-B9AD56828D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3FEA36AA-F93B-4778-A503-B9AD56828D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3FEA36AA-F93B-4778-A503-B9AD56828D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8C816FC-5A04-46BA-B7D4-A8EDCBF3286F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C816FC-5A04-46BA-B7D4-A8EDCBF3286F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C816FC-5A04-46BA-B7D4-A8EDCBF3286F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C816FC-5A04-46BA-B7D4-A8EDCBF3286F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C011B8A4-6D5E-411C-8DA5-780BB87F1571}
+		SolutionGuid = {78EDD375-7482-4191-8B0A-3E7008518397}
 	EndGlobalSection
 EndGlobal
