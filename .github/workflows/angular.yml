@@ -3,10 +3,10 @@ name: Node.js CI
 on: 
   push:
     paths: 
-      - FrontEnd/**
+      - ./FrontEnd/**
   pull_request:
     paths: 
-      - FrontEnd/**
+      - ./FrontEnd/**
 jobs:
   build:
 
@@ -23,17 +23,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install NPM Packages
+    - name: Install and build
       working-directory: ${{env.working-directory}}
-      run: npm install
-    - name: Install Angular
-      working-directory: ${{env.working-directory}}
-      run: npm install @angular/cli
-    - name: Build the site
-      working-directory: ${{env.working-directory}}
-      run: ng build fairman-personal-site
-    - name: Run the tests
-      working-directory: ${{env.working-directory}}
-      run: ng test fairman-personal-site
+      run: |
+        npm ci
+        npm run build:ci
       env:
         CI: true
