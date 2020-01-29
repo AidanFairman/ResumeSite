@@ -17,7 +17,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.1
+        dotnet-version: 2.4.402
     - name: Build with dotnet
       working-directory: ./.github/BackEnd/FairmanPersonalSite
       run: dotnet build --configuration Release
