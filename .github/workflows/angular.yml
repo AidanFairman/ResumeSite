@@ -11,7 +11,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    env:
+      working-directory: ./FrontEnd/fairman-personal-site
     strategy:
       matrix:
         node-version: [12.x]
@@ -23,16 +24,16 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install NPM Packages
-      working-directory: ./.github/FrontEnd/fairman-personal-site
+      working-directory: ${{env.working-directory}}
       run: npm install
     - name: Install Angular
-      working-directory: ./.github/FrontEnd/fairman-personal-site
+      working-directory: ${{env.working-directory}}
       run: npm install @angular/cli
     - name: Build the site
-      working-directory: ./.github/FrontEnd/fairman-personal-site
+      working-directory: ${{env.working-directory}}
       run: ng build fairman-personal-site
     - name: Run the tests
-      working-directory: ./.github/FrontEnd/fairman-personal-site
+      working-directory: ${{env.working-directory}}
       run: ng test fairman-personal-site
       env:
         CI: true
