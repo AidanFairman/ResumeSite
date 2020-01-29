@@ -11,7 +11,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    env:
+      working-directory: ./BackEnd/FairmanPersonalSite
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET Core
@@ -19,5 +20,5 @@ jobs:
       with:
         dotnet-version: 2.2.402
     - name: Build with dotnet
-      working-directory: ./.github/BackEnd/FairmanPersonalSite
+      working-directory: ${{env.working-directory}}
       run: dotnet build --configuration Release
