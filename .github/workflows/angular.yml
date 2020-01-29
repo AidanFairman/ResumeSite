@@ -22,9 +22,17 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm install @angular/cli
-    - run: ng build fairman-personal-site
-    - run: ng test fairman-personal-site
+    - name: Install NPM Packages
+      working-directory: ./.github/FrontEnd/fairman-personal-site
+      run: npm install
+    - name: Install Angular
+      working-directory: ./.github/FrontEnd/fairman-personal-site
+      run: npm install @angular/cli
+    - name: Build the site
+      working-directory: ./.github/FrontEnd/fairman-personal-site
+      run: ng build fairman-personal-site
+    - name: Run the tests
+      working-directory: ./.github/FrontEnd/fairman-personal-site
+      run: ng test fairman-personal-site
       env:
         CI: true
