@@ -1,12 +1,6 @@
 name: .NET Core
 
-on: 
-  push:
-    paths: 
-      - 'BackEnd/**'
-  pull_request:
-    paths: 
-      - 'BackEnd/**'
+on: [push, pull_request]
 jobs:
   build:
 
