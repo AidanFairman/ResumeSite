@@ -1,12 +1,6 @@
-name: Node.js CI
+name: Angular
 
-on: 
-  push:
-    paths: 
-      - 'FrontEnd/**'
-  pull_request:
-    paths: 
-      - 'FrontEnd/**'
+on: [push, pull_request]
 jobs:
   build:
 
