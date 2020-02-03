@@ -1,0 +1,12 @@
+# Objectives
+- Get some good, quality practice with front-end.
+  - Wiring up forms
+  - Properly formatting CSS
+  - Proper layout
+- Get both developers (myself and Stefana) to do full stack work. This includes:
+  - Writing stored procedures
+  - Writing data access layer for content and/or database
+  - Writing API controller
+  - Angular page to display data
+  - Angular services
+- Get architectural experience designing out the site
